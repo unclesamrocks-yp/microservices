@@ -25,7 +25,7 @@ app.get('/token', (req, res) => {
   jwt.sign({
     uuid: 'jihnib87b87f6'
   }, 
-  { key: privateKey, passphrase: 'WGSpoMNm1' }
+  { key: privateKey }
   , 
   { algorithm: 'RS256' }, function(err, token) {
     if (err) {
